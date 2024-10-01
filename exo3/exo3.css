@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "bandeau bandeau bandeau"
+        "menuhaut contenu contenu"
+        "menubas contenu contenu"
+        "pieddepage pieddepage pieddepage";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr 1fr auto;
+    height: 100vh;
+}
+
+.bandeau {
+    grid-area: bandeau;
+    background-color: cyan;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menu-haut {
+    grid-area: menuhaut;
+    background-color: lightgreen;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.menu-bas {
+    grid-area: menubas;
+    background-color: lightpink;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.contenu {
+    grid-area: contenu;
+    background-color: yellow;
+    width: 100%;
+}
+
+
+
+.contenu2 {
+    grid-area: contenu;
+    text-align: center;
+    font-size: 100px; 
+}
+
+.bloc-news {
+    float: right;
+    background-color: orange;
+    padding: 20px;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+
+}
+.pied-de-page {
+    grid-area: pieddepage;
+    background-color: lightgreen;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
